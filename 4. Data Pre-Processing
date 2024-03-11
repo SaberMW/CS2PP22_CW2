@@ -7,5 +7,5 @@ file_path = r'C:\Users\kymwu\Desktop\CS2PP22_CW2\master.csv\master.csv'
 # Call the function to preprocess the data
 preprocessed_data = preprocess_suicide_data(file_path)
 
-# Now you can work with the preprocessed data
+# Display preprocessed data
 print(preprocessed_data.head())
