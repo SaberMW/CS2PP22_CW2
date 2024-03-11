@@ -1,17 +1,1 @@
-The provided code meets the requirement of performing data pre-processing by handling missing values and encoding categorical variables, which are two common manipulations in data pre-processing.
 
-Handling Missing Values:
-
-In the code, we first load the dataset using pd.read_csv(url, names=column_names, na_values=' ?'), where na_values=' ?' marks missing values as ' ?'.
-We then check for missing values using missing_values = data.isnull().sum() to see how many missing values are in each column.
-Next, we drop rows with missing values using data_cleaned = data.dropna(). This removes any rows from the dataset that contain missing values, ensuring that we have complete data to work with.
-Encoding Categorical Variables:
-
-We use one-hot encoding to convert categorical variables into a numerical format that the computer can understand.
-The pd.get_dummies() function is used to create binary columns for each category in the specified columns (['workclass', 'education', 'marital-status', 'occupation', 'relationship', 'race', 'sex', 'native-country']).
-This creates a new dataset, data_encoded, where each category in the original categorical columns is represented by a binary value (1 or 0) in its own column.
-By combining these techniques with the provided code:
-
-We ensure that our dataset doesn't have any missing values, which could cause errors or inaccuracies in our analysis.
-We transform categorical variables into a numerical format, making it easier for machine learning algorithms to work with the data.
-Overall, these steps help clean and prepare our data for further analysis or modeling, improving the quality and reliability of our results.
